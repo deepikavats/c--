@@ -1,5 +1,6 @@
 #! /bin/bash
 
 echo "Hello from script"
-g++ hello.cpp -o hello
+result = $(g++ hello.cpp -o hello)
+echo "result is " $result
 ./hello
