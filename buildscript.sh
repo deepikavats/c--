@@ -1,6 +1,7 @@
 #! /bin/bash
 
 echo "Hello from script"
-result = $(g++ hello.cpp -o hello)
+if !g++ hello.cpp -o hello; then
+    result = 1  
 echo "result is " $result
 ./hello
